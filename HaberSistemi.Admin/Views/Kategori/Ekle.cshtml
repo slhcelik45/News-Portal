@@ -1,0 +1,55 @@
+﻿@model HaberSistemi.Data.Model.Kategori
+@{
+    ViewBag.Title = "Kategori Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <form role="form">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Kategori Ekle
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="glyphicon glyphicon-list"></i>  <a href="@Url.Action("Index","Kategori")">Kategori</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Kategori Ekle
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSuccess">Üst Kategori </label>
+                        @Html.DropDownListFor(model => model.KategoriAdi,
+                          new SelectList(ViewBag.Kategori, "ID", "KategoriAdi"),
+                         ("Seçiniz"), new { @class = "form-control", id = "ParentID" })
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSuccess">Kategori Adı</label>
+                        <input type="text" id="kategoriAdi" placeholder="Kategori Adı" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSuccess">Kategori Url</label>
+                        <input type="text" id="kategoriUrl" placeholder="Kategori URL" class="form-control">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="kategoriAktif" checked>Aktif Mi ?
+                        </label>
+                    </div>
+                    <a href="#" class="btn btn-success" onclick="KategoriEkle();">
+                        <span class="fa fa-save"></span> Kaydet
+                    </a>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /#page-wrapper -->

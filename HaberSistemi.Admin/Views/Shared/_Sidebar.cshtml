@@ -1,0 +1,41 @@
+﻿ <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav side-nav">
+        <li class="active">
+            <a href="@Url.Action("Index","Home")"><i class="glyphicon glyphicon-home"></i> Ana Sayfa</a>
+        </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-newspaper-o"></i> Haber Yönetimi <i class="glyphicon glyphicon-option-vertical"></i></a>
+            <ul id="demo1" class="collapse">
+                <li>
+                    <a href="@Url.Action("Index","Haber")">Haber Listele</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Ekle","Haber")">Haber Ekle</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="glyphicon glyphicon-list"></i> Kategori Yönetimi <i class="glyphicon glyphicon-option-vertical"></i></a>
+            <ul id="demo2" class="collapse">
+                <li>
+                    <a href="@Url.Action("Index","Kategori")">Kategori Listele</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Ekle","Kategori")">Kategori Ekle</a>
+                </li>               
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-sliders"></i> Slider Yönetimi <i class="glyphicon glyphicon-option-vertical"></i></a>
+            <ul id="demo" class="collapse">
+                <li>
+                    <a href="@Url.Action("Index","Slider")">Slider Listele</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Ekle","Slider")">Slider Ekle</a>
+                </li>
+            </ul>
+        </li>           
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\HaberSistemi.Data.dll.config
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\HaberSistemi.Data.dll
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\HaberSistemi.Data.pdb
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\EntityFramework.dll
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\EntityFramework.xml
+E:\Proje\HaberSistemi\HaberSistemi.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.csprojResolveAssemblyReference.cache
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.dll
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.pdb
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.Migrations.Olustur.resources
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.csproj.GenerateResource.Cache
+E:\Proje\HaberSistemi\HaberSistemi.Data\obj\Debug\HaberSistemi.Data.Migrations.Olustur1.resources

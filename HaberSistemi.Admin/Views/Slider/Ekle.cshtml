@@ -1,0 +1,97 @@
+﻿@model HaberSistemi.Data.Model.Slider
+@{
+    ViewBag.Title = "Slider Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/ckeditor/ckeditor.js"></script>
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        @using (Html.BeginForm("Ekle", "Slider", FormMethod.Post, new { enctype = "multipart/form-data",id="SliderForm" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <form role="form">
+                        <div class="col-lg-12">                           
+                               <h1>
+                                   @ViewBag.Title
+                               </h1>                           
+                            @if (TempData["Bilgi"] != null)
+                            {
+                                <div class="alert alert-success">
+                                    <strong>Başarılı !</strong> @TempData["Bilgi"]
+                                </div>
+                            }
+                            <ol class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-sliders"></i>  <a href="@Url.Action("Index", "Slider")">Slider</a>
+                                </li>
+                                <li class="active">
+                                    <i class="fa fa-edit"></i> Slider Ekle
+                                </li>
+                            </ol>
+                        </div>                        
+                        <div class="form-group">
+                            <label for="inputSuccess">Başlık</label>
+                            @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", id = "Baslik", placeholder = "Slider Başlık"})
+                        </div>    
+                        <div class="form-group">
+                            <label for="inputSuccess">URl</label>
+                            @Html.TextBoxFor(x => x.Url, new { @class = "form-control", id = "Url", placeholder = "Slider URL" })
+                        </div>                    
+                        <div class="form-group">
+                            <label for="inputSuccess">Açıklama</label>
+                            @Html.TextArea("Aciklama")
+                            <script type="text/javascript">
+                                var editor = CKEDITOR.instances['Aciklama'];
+                                if (editor) { editor.destroy(true); }
+                                CKEDITOR.replace('Aciklama', {
+                                    enterMode: CKEDITOR.ENTER_BR,
+                                });
+                            </script>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSuccess">Resim</label>
+                            <input type="file" name="ResimURL" accept="image/*" class="form-control" />
+                        </div>                       
+                        <div class="checkbox">
+                            <label>
+                                @Html.CheckBoxFor(x => x.AktifMi, new { @checked = "checked", id = "SliderAktif" }) Aktif Mi ?
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-success" id="SliderEkle">
+                            <span class="fa fa-save"></span> Kaydet
+                        </button>
+                    </form>
+                </div>
+            </div>
+        }
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /#page-wrapper -->
+<script>
+    $(document).ready(function () {
+        $(document).on("click", "#SliderEkle", function () {
+            $('#SliderForm').ajaxForm({
+                success: function (response) {
+                    if (response.Success) {
+                        bootbox.alert(response.Message,
+                        function () {
+                            location.reload();
+                        });
+                    }
+                    else {
+                        bootbox.alert(response.Message, function () {
+                            //geri döndüğünde bişey yapılması isteniyor ise buraya yazılır.
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>

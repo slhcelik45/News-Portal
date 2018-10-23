@@ -1,0 +1,12 @@
+E:\Proje\HaberSistemi\HaberSistemi.Core\obj\Debug\HaberSistemi.Core.csprojResolveAssemblyReference.cache
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\HaberSistemi.Core.dll.config
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\HaberSistemi.Core.dll
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\HaberSistemi.Core.pdb
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\EntityFramework.dll
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\HaberSistemi.Data.dll
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\HaberSistemi.Data.pdb
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\EntityFramework.xml
+E:\Proje\HaberSistemi\HaberSistemi.Core\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proje\HaberSistemi\HaberSistemi.Core\obj\Debug\HaberSistemi.Core.dll
+E:\Proje\HaberSistemi\HaberSistemi.Core\obj\Debug\HaberSistemi.Core.pdb
